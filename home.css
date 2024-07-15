@@ -464,24 +464,32 @@ main {
 }
 /* Base styles for level section */
 .level {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, #522573 100%);
-	position: relative;
+	z-index: 2;
+	clip-path: url(#waveClip);
+	/* display: flex;
+	justify-content: space-around;
+	align-items: center; */
+	/* position: relative;
 	height: 60vh;
 	text-align: center;
-	padding: 0 20px;
-	clip-path: url(#waveClip);
+	padding: 0 20px; */
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-top: 5%;
 }
 
 .left,
 .center,
 .right {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex: 1 1 50%;
+	margin: auto;
+	max-width: 100vw;
+	position: relative;
+	text-align: left;
 }
 
 .left h1 {
@@ -512,10 +520,10 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 90%;
 	height: 75px; /* Adjust height as needed */
 	background-color: #522573;
-	border-radius: 50%;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 .right .social-icons img {
@@ -563,12 +571,12 @@ footer {
 /* Container shortcuts */
 .container-shortcut {
 	position: fixed;
-	bottom: 20px;
-	right: 40vw;
+	bottom: 11%;
+	right: 45%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	z-index: 2000;
+	z-index: 10000;
 }
 
 .button {
