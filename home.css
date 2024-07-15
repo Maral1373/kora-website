@@ -70,7 +70,6 @@ main {
 	text-align: center;
 	background-color: #522573;
 	color: white;
-	height: max-content;
 }
 
 .hero {
@@ -370,6 +369,11 @@ main {
 .ettmeier-image img {
 	width: 100%;
 	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.ettmeier-image img:hover {
+	transform: scale(1.1);
 }
 
 .nopa {
@@ -415,8 +419,12 @@ main {
 .nopa-image img {
 	width: 100%;
 	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
 }
 
+.nopa-image img:hover {
+	transform: scale(1.1);
+}
 .balk-lobback {
 	display: flex;
 	flex-wrap: wrap;
@@ -460,6 +468,11 @@ main {
 .balk-lobback-image img {
 	width: 100%;
 	border-radius: 10px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.balk-lobback-image img:hover {
+	transform: scale(1.1);
 }
 
 /* Base styles for level section */
@@ -816,12 +829,6 @@ footer {
 		align-items: center;
 	}
 
-	.level {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-
 	.left {
 		flex: 1;
 	}
@@ -851,10 +858,6 @@ footer {
 	.social-icons a {
 		width: 6vw;
 		height: 5.5vh;
-		display: block;
-		align-items: center;
-		background-color: #522573;
-		border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 	}
 
 	.container-shortcut {
@@ -872,29 +875,87 @@ footer {
 /* Large screen styles */
 @media (min-width: 1440px) {
 	.logo img {
-		width: 10%;
+		width: 20%;
 	}
 
 	.hero-content h1 {
-		font-size: 2rem;
-		max-width: 20vw;
-	}
-
-	.hero-content p {
-		font-size: 1.2rem;
-		max-width: 25vw;
+		font-size: 4rem;
+		max-width: 40vw;
 	}
 
 	.team-member img {
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
 	}
 
 	.navbar .menu {
 		font-size: 1.2rem;
 	}
 
-	.navbar .menu a {
-		font-size: 2em;
+	.navbar .menu-toggle {
+		font-size: 2.5rem;
+	}
+
+	.content {
+		max-width: 45vw;
+		margin-left: 120px;
+		margin-bottom: 13%;
+		font-size: x-large;
+	}
+
+	.ettmeier-text {
+		padding: 2%;
+		max-width: 40vw;
+	}
+
+	.ettmeier-image {
+		margin-left: 5%;
+	}
+
+	.nopa-text {
+		padding: 2%;
+		max-width: 40vw;
+		margin-left: 5%;
+	}
+
+	.balk-lobback-text {
+		padding: 2%;
+		max-width: 40vw;
+	}
+
+	.balk-lobback-image {
+		margin-left: 7%;
+		margin-bottom: 4%;
+	}
+
+	.left h1 {
+		margin-left: 20%;
+		width: 45vw;
+	}
+
+	.right {
+		margin-right: 180px;
+	}
+
+	.image-level-up img {
+		width: 200px;
+		height: 210px;
+		margin-right: 80px;
+	}
+
+	.social-icons a {
+		width: 4vw;
+		height: 5.7vh;
+	}
+
+	.container-shortcut {
+		bottom: 6%;
+		right: 2%;
+	}
+
+	.button img {
+		width: 45px;
+		height: 45px;
+		margin-top: 5px;
 	}
 }
