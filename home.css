@@ -1,5 +1,6 @@
 /* home.css */
 
+/* Base styles for mobile screens */
 body {
 	margin: 0;
 	font-family: Arial, sans-serif;
@@ -240,7 +241,7 @@ main {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
-	clip-path: url(#waveClip);
+	/* clip-path: url(#waveClip); */
 }
 
 .svg-container {
@@ -459,6 +460,7 @@ main {
 	width: 100%;
 	border-radius: 10px;
 }
+
 /* Base styles for level section */
 .level {
 	background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, #522573 100%);
@@ -617,4 +619,135 @@ footer {
 	color: black;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+/* Tablet styles */
+@media (min-width: 600px) {
+	.logo img {
+		width: 30%;
+	}
+
+	.hero-content h1 {
+		font-size: 2rem;
+		max-width: 50vw;
+	}
+
+	.hero-content p {
+		font-size: 0.8rem;
+		max-width: 40vw;
+	}
+
+	.navbar .menu {
+		width: 30vw;
+	}
+
+	.navbar .menu a {
+		width: 30vw;
+		font-size: 1.5em;
+	}
+
+	.navbar .menu a:not(:last-child) {
+		width: 26vw;
+	}
+
+	.carousel-slide img {
+		width: 40%;
+	}
+
+	.carousel-controls {
+		top: 30%;
+	}
+
+	.carousel-controls button {
+		font-size: 2rem;
+		margin: 0 40px;
+	}
+
+	.content p {
+		line-height: 24px;
+	}
+
+	.ettmeier-text h1,
+	.nopa-text h1,
+	.balk-lobback-text h1 {
+		font-size: 1.4rem;
+	}
+
+	.image-level-up img {
+		width: 45vw;
+		margin-right: 40px;
+	}
+
+	.social-icons a {
+		width: 8vw;
+		height: 8vh;
+	}
+
+	.social-icons img {
+		width: 30px !important;
+	}
+}
+
+/* Laptop styles */
+@media (min-width: 1024px) {
+	.logo img {
+		width: 15%;
+	}
+
+	.hero-content {
+		left: 50%;
+	}
+
+	.hero-content h1 {
+		font-size: 1.5rem;
+		max-width: 25vw;
+	}
+
+	.hero-content p {
+		font-size: 1rem;
+		max-width: 30vw;
+	}
+
+	.team-member img {
+		width: 120px;
+		height: 120px;
+	}
+
+	.navbar .menu {
+		font-size: 1rem;
+	}
+
+	.navbar .menu a {
+		font-size: 1.8em;
+	}
+}
+
+/* Large screen styles */
+@media (min-width: 1440px) {
+	.logo img {
+		width: 10%;
+	}
+
+	.hero-content h1 {
+		font-size: 2rem;
+		max-width: 20vw;
+	}
+
+	.hero-content p {
+		font-size: 1.2rem;
+		max-width: 25vw;
+	}
+
+	.team-member img {
+		width: 150px;
+		height: 150px;
+	}
+
+	.navbar .menu {
+		font-size: 1.2rem;
+	}
+
+	.navbar .menu a {
+		font-size: 2em;
+	}
 }
