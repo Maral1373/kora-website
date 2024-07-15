@@ -3,7 +3,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const menuToggle = document.querySelector(".menu-toggle");
 	const navbar = document.querySelector(".navbar");
-	const menu = document.querySelector(".menu");
 
 	// Toggle menu on click of menu toggle button
 	menuToggle.addEventListener("click", function (event) {
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Close the menu when clicking outside of it
 	document.addEventListener("click", function (event) {
 		if (
-			!menu.contains(event.target) &&
+			!navbar.contains(event.target) &&
 			!menuToggle.contains(event.target)
 		) {
 			navbar.classList.remove("open");
