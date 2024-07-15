@@ -58,6 +58,7 @@ header {
 
 .navbar .menu a:hover {
 	background-color: #2d143f;
+	border-radius: 0 0 10px 10px;
 }
 
 .navbar .menu a:not(:last-child) {
@@ -637,17 +638,17 @@ footer {
 		max-width: 40vw;
 	}
 
-	.navbar .menu {
-		width: 30vw;
-	}
-
 	.navbar .menu a {
-		width: 30vw;
 		font-size: 1.5em;
 	}
 
 	.navbar .menu a:not(:last-child) {
 		width: 26vw;
+	}
+
+	.navbar .menu {
+		top: 170%;
+		right: 1%;
 	}
 
 	.carousel-slide img {
@@ -691,21 +692,21 @@ footer {
 /* Laptop styles */
 @media (min-width: 1024px) {
 	.logo img {
-		width: 15%;
+		width: 25%;
 	}
 
 	.hero-content {
-		left: 50%;
+		left: 30%;
 	}
 
 	.hero-content h1 {
-		font-size: 1.5rem;
-		max-width: 25vw;
+		font-size: 3.5rem;
+		max-width: 50vw;
 	}
 
 	.hero-content p {
-		font-size: 1rem;
-		max-width: 30vw;
+		font-size: 1.5rem;
+		max-width: 35vw;
 	}
 
 	.team-member img {
@@ -717,8 +718,154 @@ footer {
 		font-size: 1rem;
 	}
 
-	.navbar .menu a {
-		font-size: 1.8em;
+	.navbar .menu-toggle {
+		font-size: 1.7rem;
+	}
+
+	.about {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.about-text {
+		flex: 1;
+		max-width: 100%;
+		text-align: left;
+		margin: 5% 75px;
+	}
+
+	.about-image {
+		flex: 1;
+		max-width: 30%;
+	}
+
+	.carousel-slide img {
+		width: 30%;
+	}
+
+	.carousel-controls {
+		top: 25%;
+	}
+
+	.content h2 {
+		font-size: 3rem;
+		color: #532573;
+	}
+
+	.ettmeier-text h1,
+	.nopa-text h1,
+	.balk-lobback-text h1 {
+		font-size: 1.4rem;
+	}
+
+	.ettmeier,
+	.nopa,
+	.balk-lobback {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0;
+		margin: 0;
+	}
+
+	.ettmeier-text {
+		flex: 1;
+		width: 50vw;
+		text-align: left;
+	}
+
+	.ettmeier-image {
+		flex: 1;
+		width: 20vw;
+		margin-left: 20px;
+	}
+
+	.nopa-text {
+		flex: 1;
+		width: 30vw;
+		text-align: left;
+		padding: 5%;
+	}
+
+	.nopa-image {
+		flex: 1;
+		width: 30vw;
+		margin-right: 40px;
+	}
+
+	.balk-lobback-image {
+		flex: 1;
+		width: 30vw;
+		margin-left: 20px;
+	}
+
+	.balk-lobback-text {
+		flex: 1;
+		width: 30vw;
+		text-align: left;
+		padding: 5%;
+	}
+
+	.level {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.level {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.left {
+		flex: 1;
+	}
+
+	.left h1 {
+		width: 45vw;
+	}
+
+	.right {
+		display: flex;
+		align-items: center;
+		margin-right: 100px;
+	}
+
+	.image-level-up img {
+		width: 200px;
+		height: 210px;
+	}
+
+	.social-icons {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 10px;
+		max-width: 20vw;
+	}
+
+	.social-icons a {
+		width: 6vw;
+		height: 5.5vh;
+		display: block;
+		align-items: center;
+		background-color: #522573;
+		border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	}
+
+	.container-shortcut {
+		bottom: 5.5%;
+		right: 3%;
+	}
+
+	.button img {
+		width: 45px;
+		height: 45px;
+		margin-top: 5px;
 	}
 }
 
