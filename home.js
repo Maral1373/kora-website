@@ -21,6 +21,32 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+document.addEventListener("scroll", function () {
+	const transform = document.querySelector(".transform");
+	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+	const threshold = window.innerHeight / 4;
+
+	if (scrollPosition > threshold) {
+		const offset = (scrollPosition - threshold) * 2;
+		transform.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
+	} else {
+		transform.style.transform = "translate(-50%, -50%)";
+	}
+});
+
+document.addEventListener("scroll", function () {
+	const content2 = document.querySelector(".content2");
+	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+	const threshold = window.innerHeight / 2;
+
+	if (scrollPosition > threshold) {
+		const offset = (scrollPosition - threshold) * 2;
+		content2.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
+	} else {
+		content2.style.transform = "translate(-50%, -50%)";
+	}
+});
+
 const carousel = document.querySelector(".carousel");
 const slides = Array.from(carousel.children);
 const prevButton = document.querySelector(".prev");
