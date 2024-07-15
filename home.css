@@ -15,20 +15,20 @@ header {
 }
 
 .logo img {
-	height: 80px;
-	margin-left: 10vw;
+	width: 30vw;
+	margin: auto;
 }
 
 .navbar {
 	position: relative;
-	margin-right: 10vw;
+	/* margin-right: 10vw; */
 }
 
 .navbar .menu-toggle {
 	background: none;
 	border: none;
 	color: white;
-	font-size: 34px;
+	font-size: 1.2rem;
 	cursor: pointer;
 }
 
@@ -70,8 +70,8 @@ main {
 
 .hero-content {
 	position: absolute;
-	top: 30%;
-	left: 50%;
+	top: 50%;
+	left: 35%;
 	transform: translate(-50%, -50%);
 	max-width: max-content;
 	color: white;
@@ -79,14 +79,15 @@ main {
 }
 
 .hero-content h1 {
-	font-size: 6rem;
+	font-size: 1rem;
 	line-height: 1.2;
 	text-align: left;
+	max-width: 40vw;
 }
 
 .hero-content p {
-	font-size: 1.8rem;
-	max-width: 400px;
+	font-size: 0.6rem;
+	max-width: 50vw;
 	text-align: left;
 	margin: 20px 0;
 }
@@ -118,8 +119,8 @@ main {
 }
 
 .team-member img {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center center;
@@ -491,7 +492,7 @@ main {
 
 .center .image-level-up img {
 	width: 100%; /* Ensure image fills its container */
-	max-width: 250px; /* Limit image size */
+	max-width: 150px; /* Limit image size */
 }
 
 .right .social-icons {
@@ -501,21 +502,22 @@ main {
 		minmax(60px, 1fr)
 	); /* Responsive grid */
 	gap: 10px;
+	margin-right: 10%;
 }
 
 .right .social-icons a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 90%;
+	width: 80%;
 	height: 75px; /* Adjust height as needed */
 	background-color: #522573;
 	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
 }
 
 .right .social-icons img {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
 /* Footer styles */
@@ -537,7 +539,7 @@ footer {
 }
 
 .logo-footer img {
-	width: 70px;
+	width: 10%;
 }
 
 .footer-links {
@@ -558,26 +560,27 @@ footer {
 /* Container shortcuts */
 .container-shortcut {
 	position: fixed;
-	bottom: 11%;
-	right: 45%;
+	bottom: 20%;
+	right: 5%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	z-index: 10000;
+	z-index: 200;
 }
 
 .button {
 	display: block;
 	background-color: white;
-	padding: 10px;
+	padding: 15%;
+	margin: auto;
 	margin-bottom: 10px;
 	border-radius: 50%;
 	border: 2px solid #fbc122;
 }
 
 .button img {
-	width: 30px;
-	height: 30px;
+	width: 20px;
+	height: 20px;
 }
 
 /* Modal styles */
