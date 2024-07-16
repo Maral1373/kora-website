@@ -730,6 +730,82 @@ footer {
 	text-decoration: none;
 }
 
+.modal-content-email {
+	position: relative;
+	background-color: #fefefe;
+	height: auto;
+	max-width: 35vw;
+	margin: 15% auto;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 5%;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#email-form-modal {
+	background-image: url(./images/back-email.png);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.modal-content-email form {
+	display: flex;
+	flex-direction: column;
+	background-image: url(./images/adler.png);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+form select,
+form input,
+form textarea,
+form input[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+form input[type="submit"] {
+	background-color: #ffcc00;
+	color: #4a148c;
+	border: none;
+	cursor: pointer;
+	border-radius: 35px;
+	width: 20%;
+}
+
+form input[type="submit"]:hover {
+	background-color: #e6b800;
+}
+
+form select,
+form input,
+form textarea {
+	background-color: #f9f9f9;
+	width: 70%;
+}
+
+.contact-info {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-top: #4a148c 1px solid;
+	gap: 20px; /* Add some space between the h6 elements if needed */
+}
+
+.contact-info h6 {
+	color: #ffcc00;
+	font-size: 0.7rem;
+	padding: 10px; /* Add padding if needed */
+	margin: 0; /* Remove default margin */
+}
+
 /* Tablet styles */
 @media (min-width: 600px) {
 	.logo img {
