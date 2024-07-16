@@ -113,14 +113,19 @@ function resetImagePosition() {
 document.addEventListener("mousemove", handleMouseMove);
 document.addEventListener("mouseleave", resetImagePosition);
 
-document.getElementById("wc-button").addEventListener("click", function () {
-	document.getElementById("social-icons-modal").style.display = "block";
-});
+document
+	.getElementById("wc-button")
+	.addEventListener("click", function (event) {
+		event.preventDefault(); // Prevents the default scroll behavior
+		document.getElementById("social-icons-modal").style.display = "block";
+	});
 
-document.getElementById("email-button").addEventListener("click", function () {
-	document.getElementById("email-form-modal").style.display = "block";
-});
-
+document
+	.getElementById("email-button")
+	.addEventListener("click", function (event) {
+		event.preventDefault(); // Prevents the default scroll behavior
+		document.getElementById("email-form-modal").style.display = "block";
+	});
 document.querySelectorAll(".close").forEach(function (element) {
 	element.addEventListener("click", function () {
 		element.parentElement.parentElement.style.display = "none";

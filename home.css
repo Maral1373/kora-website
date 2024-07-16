@@ -653,7 +653,7 @@ footer {
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -663,26 +663,71 @@ footer {
 }
 
 .modal-content {
+	position: relative;
 	background-color: #fefefe;
+	background-image: url(./images/WC-Ente-e1692952792284.png);
+	background-repeat: no-repeat;
+	background-size: 30vw;
+	background-position: 50% 80%;
+	height: 80vh;
+	max-width: 35vw;
 	margin: 15% auto;
-	padding: 20px;
-	border: 1px solid #888;
-	width: 80%;
-	max-width: 600px;
+	padding: 40px;
+	box-sizing: border-box;
+	border-radius: 5%;
+}
+
+#social-icons {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+#social-icons h1 {
+	font-size: 2.8rem;
+	font-weight: bold;
+	color: #522573;
+	margin: 10px 20px 0 20px;
+}
+
+.icons-parent {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10%;
+}
+
+#social-icons a {
+	width: 2vw;
+	height: 5vh;
+	align-items: center;
+	background-color: #522573;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	margin: 0 2%;
+}
+
+#social-icons img {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 10px 5px;
 }
 
 .close {
-	color: #aaa;
-	float: right;
+	position: absolute;
+	top: 10px;
+	right: 20px;
 	font-size: 28px;
 	font-weight: bold;
+	color: #aaa;
+	cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
 	color: black;
 	text-decoration: none;
-	cursor: pointer;
 }
 
 /* Tablet styles */
