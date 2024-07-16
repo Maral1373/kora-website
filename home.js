@@ -22,28 +22,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("scroll", function () {
-	const transform = document.querySelector(".transform");
+	const transformElement = document.querySelector(".hero-content");
 	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 	const threshold = window.innerHeight / 4;
 
 	if (scrollPosition > threshold) {
 		const offset = (scrollPosition - threshold) * 2;
-		transform.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
+		transformElement.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
 	} else {
-		transform.style.transform = "translate(-50%, -50%)";
-	}
-});
-
-document.addEventListener("scroll", function () {
-	const content2 = document.querySelector(".content2");
-	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-	const threshold = window.innerHeight / 2;
-
-	if (scrollPosition > threshold) {
-		const offset = (scrollPosition - threshold) * 2;
-		content2.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
-	} else {
-		content2.style.transform = "translate(-50%, -50%)";
+		transformElement.style.transform = "translate(-50%, -50%)";
 	}
 });
 
@@ -145,3 +132,36 @@ document
 	.addEventListener("click", function () {
 		window.scrollTo({ top: 0, behavior: "smooth" });
 	});
+
+document.addEventListener("scroll", function () {
+	const transformElements = document.querySelectorAll(".transform");
+	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+	const threshold = window.innerHeight / 4;
+
+	transformElements.forEach((transformElement) => {
+		if (scrollPosition > threshold) {
+			const offset = (scrollPosition - threshold) * 2;
+			transformElement.style.transform = `translate(-50%, calc(-50% - ${offset}px))`;
+		} else {
+			transformElement.style.transform = "translate(-50%, -50%)";
+		}
+	});
+});
+
+document.addEventListener("scroll", function () {
+	const elementsToAnimate = document.querySelectorAll(".animate");
+	const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+	const windowHeight = window.innerHeight;
+
+	elementsToAnimate.forEach((element) => {
+		const elementTop = element.getBoundingClientRect().top + scrollPosition;
+		if (
+			scrollPosition + windowHeight >
+			elementTop + element.clientHeight / 4
+		) {
+			element.classList.add("in-view");
+		} else {
+			element.classList.remove("in-view");
+		}
+	});
+});

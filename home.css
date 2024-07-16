@@ -3,8 +3,21 @@
 /* Base styles for mobile screens */
 body {
 	margin: 0;
-	font-family: Arial, sans-serif;
+	font-family: "Dunbar Tall", sans-serif;
+	font-weight: bold;
+	font-style: normal;
 	overflow-x: hidden;
+}
+
+@font-face {
+	font-family: "Dunbar Tall";
+	src: url("fonts/DunbarTall-Bold.eot");
+	src: url("fonts/DunbarTall-Bold.eot?#iefix") format("embedded-opentype"),
+		url("fonts/DunbarTall-Bold.woff2") format("woff2"),
+		url("fonts/DunbarTall-Bold.woff") format("woff"),
+		url("fonts/DunbarTall-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
 }
 
 header {
@@ -80,7 +93,7 @@ main {
 .hero-content {
 	position: absolute;
 	top: 50%;
-	left: 35%;
+	left: 40%;
 	transform: translate(-50%, -50%);
 	max-width: max-content;
 	color: white;
@@ -88,10 +101,19 @@ main {
 }
 
 .hero-content h1 {
+	text-transform: uppercase;
 	font-size: 1rem;
 	line-height: 1.2;
 	text-align: left;
 	max-width: 40vw;
+	font-style: italic;
+}
+
+.hero-content .marketing {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	max-width: 20vw;
+	font-style: italic;
 }
 
 .hero-content p {
@@ -327,13 +349,17 @@ main {
 	margin-top: -44px;
 }
 
+.projects-container {
+	padding: 0 10%;
+}
+
 .content-container .content {
 	margin: auto;
 	padding: 6% 0;
 	width: 50%;
 }
 
-.content-container .content h1 {
+.content-container .content h2 {
 	font-size: 1.2rem;
 	padding-top: 20%;
 	color: #522573;
@@ -487,6 +513,17 @@ main {
 
 .balk-lobback-image img:hover {
 	transform: scale(1.1);
+}
+
+.animate {
+	opacity: 0;
+	transform: translateY(-50%);
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate.in-view {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 /* Base styles for level section */
@@ -665,6 +702,10 @@ footer {
 		max-width: 40vw;
 	}
 
+	.hero-content .marketing {
+		font-size: 3.5rem;
+	}
+
 	.navbar .menu a {
 		font-size: 1.5em;
 	}
@@ -740,6 +781,10 @@ footer {
 	.hero-content p {
 		font-size: 1.5rem;
 		max-width: 35vw;
+	}
+
+	.hero-content .marketing {
+		font-size: 5.6rem;
 	}
 
 	.team-member img {
@@ -922,8 +967,9 @@ footer {
 
 	.hero-content h1 {
 		font-size: 4rem;
-		max-width: 40vw;
 	}
+
+	
 
 	.team-member img {
 		width: 180px;
