@@ -695,6 +695,12 @@ footer {
 		line-height: 24px;
 	}
 
+	.banner .content {
+		padding-bottom: 3%;
+		max-width: 45vw;
+		margin-left: 15%;
+	}
+
 	.ettmeier-text h1,
 	.nopa-text h1,
 	.balk-lobback-text h1 {
@@ -798,6 +804,12 @@ footer {
 		color: #532573;
 	}
 
+	.content {
+		width: 45vw;
+		margin-left: 15%;
+		margin-bottom: 13%;
+	}
+
 	.ettmeier-text h1,
 	.nopa-text h1,
 	.balk-lobback-text h1 {
@@ -887,7 +899,7 @@ footer {
 
 	.social-icons a {
 		width: 6vw;
-		height: 5.5vh;
+		height: 8.5vh;
 	}
 
 	.container-shortcut {
@@ -898,7 +910,7 @@ footer {
 	.button img {
 		width: 45px;
 		height: 45px;
-		margin-top: 5px;
+		/* margin-top: 5%; */
 	}
 }
 
@@ -927,8 +939,8 @@ footer {
 	}
 
 	.content {
-		max-width: 45vw;
-		margin-left: 120px;
+		max-width: 35vw;
+		margin-left: 15%;
 		margin-bottom: 13%;
 		font-size: x-large;
 	}
@@ -975,7 +987,7 @@ footer {
 
 	.social-icons a {
 		width: 4vw;
-		height: 5.7vh;
+		height: 7.7vh;
 	}
 
 	.container-shortcut {
