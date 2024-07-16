@@ -356,15 +356,14 @@ main {
 .content-container .content {
 	margin: auto;
 	padding: 6% 0;
-	width: 50%;
 }
 
 .content-container .content h2 {
-	font-size: 1.2rem;
-	padding-top: 20%;
+	padding-top: 20% 0;
 	color: #522573;
 	text-align: center;
-	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 2rem;
 }
 
 .ettmeier {
@@ -742,6 +741,16 @@ footer {
 		margin-left: 15%;
 	}
 
+	.content-container .content h2 {
+		padding-top: 20% 0;
+		color: #522573;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2rem;
+		width: 65%;
+		margin: 5% auto;
+	}
+
 	.ettmeier-text h1,
 	.nopa-text h1,
 	.balk-lobback-text h1 {
@@ -775,7 +784,7 @@ footer {
 
 	.hero-content h1 {
 		font-size: 3.5rem;
-		max-width: 50vw;
+		max-width: 55vw;
 	}
 
 	.hero-content p {
@@ -842,6 +851,12 @@ footer {
 
 	.carousel-controls {
 		top: 25%;
+	}
+
+	.content-container .content h2 {
+		width: 90%;
+		margin: 5% 0 auto;
+		font-size: 2.5rem;
 	}
 
 	.content h2 {
@@ -969,7 +984,9 @@ footer {
 		font-size: 4rem;
 	}
 
-	
+	.hero-content .marketing {
+		font-size: 6.5rem;
+	}
 
 	.team-member img {
 		width: 180px;
@@ -985,10 +1002,14 @@ footer {
 	}
 
 	.content {
-		max-width: 35vw;
 		margin-left: 15%;
 		margin-bottom: 13%;
 		font-size: x-large;
+	}
+
+	.content-container .content h2 {
+		width: 100%;
+		font-size: 4rem;
 	}
 
 	.ettmeier-text {
