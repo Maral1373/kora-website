@@ -220,6 +220,22 @@ main {
 	border-radius: 10px;
 }
 
+.backstick-left img {
+	/* border: 2px solid red; */
+	width: 10%;
+	position: absolute;
+	right: 25%;
+	bottom: 45%;
+}
+
+.backstick-right img {
+	/* border: 2px solid red; */
+	width: 10%;
+	position: absolute;
+	left: 25%;
+	top: 70%;
+}
+
 .carousel-container {
 	position: relative;
 	width: 100%;
