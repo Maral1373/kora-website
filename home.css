@@ -221,19 +221,15 @@ main {
 }
 
 .backstick-left img {
-	/* border: 2px solid red; */
-	width: 10%;
-	position: absolute;
-	right: 25%;
-	bottom: 45%;
+	width: 9vw;
+	position: static;
+	margin-left: 60vw;
 }
 
 .backstick-right img {
-	/* border: 2px solid red; */
-	width: 10%;
-	position: absolute;
-	left: 25%;
-	top: 70%;
+	width: 9vw;
+	position: static;
+	margin-right: 60vw;
 }
 
 .carousel-container {
@@ -962,25 +958,9 @@ form textarea {
 		flex: 1;
 	}
 
-	/* .about {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
-		gap: 20px;
+	.backstick-right img {
+		margin-top: -45vh;
 	}
-
-	.about-text {
-		flex: 1;
-		max-width: 100%;
-		text-align: left;
-		margin: 5% 75px;
-	}
-
-	.about-image {
-		flex: 1;
-		max-width: 30%;
-	} */
 
 	.carousel-slide img {
 		width: 30%;
@@ -1203,5 +1183,18 @@ form textarea {
 		width: 45px;
 		height: 45px;
 		margin-top: 5px;
+	}
+
+	.backstick-left img {
+		max-width: 10vw;
+		position: static;
+		margin-left: 50vw;
+	}
+
+	.backstick-right img {
+		max-width: 10vw;
+		position: static;
+		margin-right: 50vw;
+		margin-top: -45vh;
 	}
 }
